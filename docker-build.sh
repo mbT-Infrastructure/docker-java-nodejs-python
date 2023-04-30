@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-BUILD_ARGUMENTS=""
+BUILD_ARGUMENTS=()
 DEPENDENCIES=(docker)
 UPDATE_BASE=false
 REPOSIITORY_NAME="docker-java-nodejs-python"
