@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+
+    docker-java-nodejs-python:
+        container_name: docker-java-nodejs-python
+        build: .
+        command: >
+            bash -c 'echo "Java version $(java --version),
+            Node.js version $(node --version),
+            npm version $(npm --version),
+            Python version $(python3 --version)"'
+            
