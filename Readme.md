@@ -1,16 +1,41 @@
-# Docker image
+# java-nodejs-python image
 
-This Docker image contains a Java, Node.js and Python install.
+This image contains ...
 
+It does ...
+
+## Installation
+
+1. Pull from [Docker Hub], download the package from [Releases] or build using `builder/build.sh`
+
+## Usage
+
+This Container image extends the [base image]. Make sure to also configure environment variables,
+ports and volumes from that image.
+
+### Command line flags
+
+-   `--output PATH`
+    -   The output path.
+
+### Environment variables
+
+-   `VARIABLE`
+    -   Set to `true` to enable ..., default: ``.
+
+### Volumes
+
+-   `/media/volume`
+    -   The input and output directory of the files to ...
 
 ## Development
 
-To build and run for development run:
+To run for development execute:
+
 ```bash
 docker compose --file docker-compose-dev.yaml up --build
 ```
 
-To build the image locally run:
-```bash
-./docker-build.sh
-```
+[base image]: https://github.com/mbT-Infrastructure/docker-base
+[Docker Hub]: https://hub.docker.com/r/madebytimo/java-nodejs-python
+[Releases]: https://github.com/madebytimo/docker-java-nodejs-python/releases
